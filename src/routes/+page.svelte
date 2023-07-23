@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Todo from "$lib/todo.svelte";
+</script>
+
+<svelte:head>
+    <title>To-Do</title>
+</svelte:head>
+
+<h1>To-Do</h1>
+<form action ="" method="">
+    <input type="text" name="text" aria-label="add a todo" placeholder = "+Add a todo"/>
+</form>
+
+<Todo />
