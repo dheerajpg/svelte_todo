@@ -7,9 +7,9 @@
 :root {
     font-family: "Montserrat",Verdana,sans-serif;
     font-size: 22px;
-    --primary-color:#FF3B30;
-    --secondary-color:#fa5e55;
-    --third-color:#ffefef;
+    --primary-color:#000000;
+    --secondary-color:#0e0e0e;
+    --third-color:#1c1c1c;
 }
 
 body{
