@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Montserrat";
+    src:
+      url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800");
+      font-display:swap;
+}
+:root {
+    font-family: "Montserrat",Verdana,sans-serif;
+    font-size: 22px;
+    --primary-color:#FF3B30;
+    --secondary-color:#fa5e55;
+    --third-color:#ffefef;
+}
+
+body{
+    background-color: var(--primary-color);
+    background: linear-gradient(
+        180deg,
+        var(--primary-color),
+        var(--secondary-color),
+        var(--third-color)
+        );
+    margin:0;
+    min-height: 100vh;    
+}
+
+h1{
+    text-align: center;
+    font-size:2rem;
+
+}
