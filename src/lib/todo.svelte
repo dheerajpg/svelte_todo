@@ -28,7 +28,7 @@
         border-radius: 10px;
         color:black;
     }
-    .toggle{
+    button.toggle{
         border: 1px solid black;
         border-radius:10px;
         box-sizing: border-box;
@@ -52,15 +52,46 @@
     }
     .delete{
         background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg>');
+        opacity:0.4;
+        display: flex;
+        align-items: center; 
+        position: relative; 
+    }
+
+    .delete:hover,
+    .delete:focus{
+        transition: opacity 0.2s;
         opacity:1;
+    }
+    .done{
+        transform: none;
+        opacity:1;
+        filter:drop-shadow(0px 0px 1px rgba(20, 20, 20, 0.1));
+    }
+     .done .toggle {
+        border: none;
+        display: flex;
+        align-items: center; 
+        position: relative; 
+        top: 5px;
+    }
+    .svgtoggle{
+        align-items: center; 
+        position: relative; 
+        top: 0.7rem;
+        left:0.6rem;
     }
 
 </style>
 
-<div class="todo">
+<div class="todo done">
     <form action="" method="">
         <input type="hidden" name="done" value="" />
-        <button aria-label="Mark as Done/Not Done" class="toggle">Done/Not Done</button>
+        <svg class="svgtoggle" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.5001 8.99998C16.8906 9.3905 16.8906 10.0237 16.5001 10.4142L11.7072 15.2071C11.3167 15.5976 10.6835 15.5976 10.293 15.2071L8.0001 12.9142C7.60958 12.5237 7.60958 11.8905 8.0001 11.5C8.39063 11.1095 9.02379 11.1095 9.41432 11.5L11.0001 13.0858L15.0859 8.99998C15.1347 8.95116 15.1873 8.90845 15.2428 8.87184C15.6309 8.61556 16.1584 8.65827 16.5001 8.99998Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="black"/>
+            </svg>        
+        <button aria-label="Mark as Done/Not Done"class="toggle"></button>    
     </form>
 
     <form action="" method="" class="text">
